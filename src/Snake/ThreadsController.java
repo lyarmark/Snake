@@ -3,11 +3,11 @@ import java.util.ArrayList;
 
 //Controls all the game logic .. most important class in this project.
 public class ThreadsController extends Thread {
-	ArrayList<ArrayList<DataOfSquare>> Squares = new ArrayList<ArrayList<DataOfSquare>>();
-	Tuple headSnakePos;
-	int sizeSnake = 3;
-	long speed = 50;
-	public static int directionSnake;
+	private ArrayList<ArrayList<DataOfSquare>> Squares = new ArrayList<ArrayList<DataOfSquare>>();
+	private Tuple headSnakePos;
+	private int sizeSnake = 3;
+	private long speed = 50;
+	static int directionSnake;
 
 	ArrayList<Tuple> positions = new ArrayList<Tuple>();
 	Tuple foodPosition;

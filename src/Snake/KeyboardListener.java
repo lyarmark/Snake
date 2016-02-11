@@ -3,15 +3,12 @@ package Snake;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-import javafx.scene.input.KeyCode;
-
 public class KeyboardListener extends KeyAdapter {
-	private KeyCode key;
 
 	public void keyPressed(KeyEvent e) {
-		
+
 		switch (e.getKeyCode()) {
-		
+
 		case 39: // -> Right
 					// if it's not the opposite direction
 			if (ThreadsController.directionSnake != 2)
